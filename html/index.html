@@ -3,11 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="A personal movie collection featuring five favorites, ratings, posters, synopses, and cast lists.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Movies | Nitin</title>
     <style>
-      a {
-        color: black;
-      }
+      * { box-sizing: border-box; }
+      body { max-width: 1100px; margin: 0 auto; padding: 24px; font-family: system-ui, sans-serif; line-height: 1.5; }
+      a { color: #172d50; }
+      nav ul { display: flex; flex-wrap: wrap; gap: 12px 24px; padding-left: 20px; }
+      main { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 24px; margin-top: 24px; }
+      main section { min-width: 0; }
+      main section a { display: block; height: 100%; text-decoration: none; }
+      main img { display: block; width: 100%; height: auto; max-height: 440px; object-fit: contain; object-position: left center; }
+      main h2 { font-size: 1.1rem; }
+      a:focus-visible { outline: 3px solid #1769aa; outline-offset: 3px; }
+      @media (max-width: 520px) { body { padding: 16px; } nav ul { display: block; } }
     </style>
   </head>
   <body>
@@ -20,41 +30,42 @@
                 <li><a href="./topg.html">Top Gun : Maverick</a></li>
                 <li><a href="./avengers.html">Avengers : Endgame</a></li>
                 <li><a href="./shawshank.html">The Shawshank Redemption</a></li>
+            </ul>
         </nav>
         <main> 
           <section> 
             <a href="./f1.html">
-              <img height="550px" src="./images/F1.png" alt="F1">
-              <h2>F1 - <em>5 Star</em> </h2>
-              </section>
-              </a>
+              <img src="./images/F1.png" alt="F1 movie poster" loading="lazy">
+              <h2>F1 — <em>5 stars</em></h2>
+            </a>
+          </section>
 
               <section>
               <a href="./batman.html">
-              <img height="550px" src="./images/batman.png" alt="Batman Begins">
-              <h2>Batman Begins- <em>4.7 Star</em> </h2>
+              <img src="./images/batman.png" alt="Batman Begins movie poster" loading="lazy">
+              <h2>Batman Begins — <em>4.7 stars</em> </h2>
               </a>
 
               </section>
 
             <section>
               <a href="./topg.html">
-            <img height="550px" src="./images/topg.png" alt="Top Gun : Maverick ">
-            <h2>Top Gun : Maverick- <em>4.5 Star</em> </h2>
+            <img src="./images/topg.png" alt="Top Gun: Maverick movie poster" loading="lazy">
+            <h2>Top Gun: Maverick — <em>4.5 stars</em> </h2>
             </a>
           </section>
 
           <section>
               <a href="./avengers.html">
-            <img height="550px" src="./images/Avenger.png" alt="Avengers : Endgame">
-            <h2>Avengers : Endgame- <em>4.5 Star</em> </h2>
+            <img src="./images/Avenger.png" alt="Avengers: Endgame movie poster" loading="lazy">
+            <h2>Avengers: Endgame — <em>4.5 stars</em> </h2>
             </a>
           </section>
 
           <section>
               <a href="./shawshank.html">
-            <img height="550px" src="./images/Shawshank.png" alt="The Shawshank Redemption">
-            <h2>The Shawshank Redemption- <em>4 Star</em> </h2>
+            <img src="./images/Shawshank.png" alt="The Shawshank Redemption movie poster" loading="lazy">
+            <h2>The Shawshank Redemption — <em>4 stars</em> </h2>
             </a>
           </section>
 
